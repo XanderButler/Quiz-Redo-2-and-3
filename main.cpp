@@ -45,21 +45,21 @@ int main() {
     std::cout << "Enter the size of the array: ";
     std::cin >> arraySize;
 
-    // Dynamic allocation of array
+    // dynamic allocation of array
     int* myArray = new int[arraySize];
 
-    // Populate dynamic array from file
+    // Ppopulate dynamic array from file
     populateArray(myArray, arraySize);
 
-    // Print array
+    // print array
     std::cout << "Array Contents:\n";
     printArray(myArray, arraySize);
 
-    // Calculate and print average
+    // calculate and print average
     float avg = calculateAverage(myArray, arraySize);
     std::cout << "Average: " << avg << "\n";
 
-    // Deallocate memory for dynamic array
+    // deallocate memory for dynamic array
     delete[] myArray;
 
     return 0;
